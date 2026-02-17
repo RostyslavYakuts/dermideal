@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: $font-family;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body{
+	overflow-x: hidden;
+}
+
+.font-bold, b, strong{
+	font-family: $font-family-b;
+}
+.font-semibold{
+	font-family: $font-family-sb;
+}
+.font-medium{
+	font-family: $font-family-m;
+}
+body.shadow{
+	position:relative;
+	overflow:hidden;
+	&:after{
+		@include respond_max(1199){
+			content:'';
+			z-index: 220;
+			display:block;
+			background: $brand-light;
+			//backdrop-filter: blur(4px);
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			position:fixed;
+		}
+	}
+}
+.wp-block-heading{
+	font-family: $font-family-b;
+}
+h1,h2,h3,.h1,.h2,.h3{
+	font-family: $font-family;
+	line-height: 1.2;
+	.bold, b, strong{
+		font-family: $font-family-sb;
+		font-weight: 500;
+	}
+}
+.font-bold{
+	font-family: $font-family-b;
+	font-weight: 700;
+}
+.font-semibold{
+	font-family: $font-family-m;
+	font-weight: 500;
+}
+
+.total-header{
+	z-index: 1111;
+}
+.bg-blur{
+	backdrop-filter: blur(8px);
+}
+.container{
+	padding-left: 25px;
+	padding-right: 25px;
+	@include respond(320){
+		max-width: 320px;
+	}
+	@include respond(360){
+		max-width: 360px;
+	}
+	@include respond(375){
+		max-width: 375px;
+	}
+	@include respond(390){
+		max-width: 390px;
+	}
+	@include respond(393){
+		max-width: 393px;
+	}
+	@include respond(412){
+		max-width: 412px;
+	}
+	@include respond(416){
+		max-width: 416px;
+	}
+	@include respond(432){
+		max-width: 432px;
+	}
+	@include respond(480){
+		max-width: 480px;
+	}
+	@include respond(540){
+		max-width: 540px;
+	}
+	@include respond(600){
+		max-width: 600px;
+	}
+	@include respond(767){
+		max-width: 767px;
+	}
+	@include respond(834){
+		max-width: 834px;
+	}
+	@include respond(991){
+		max-width: 991px;
+	}
+	@include respond(1024){
+		max-width: 1024px;
+	}
+	@include respond(1199){
+		max-width: 1170px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.g-recaptcha{
+	@include respond_max(400){
+		transform: scale(0.8);
+	}
+	@include respond_max(360){
+		transform: scale(0.7);
+	}
+}
+
+.translate-x-20 { transform: translateX(5rem); }
+.-translate-x-20 { transform: translateX(-5rem); }
+.opacity-0 { opacity: 0; }
+.opacity-100 { opacity: 1; }
+.transition-all { transition: all 0.7s ease; }
+
+.border-error{
+	border: 1px solid $error;
+}
+.text-error,.label-error{
+	color:$error!important;
+}
+.banner-cta{
+	&:hover{
+		svg{
+			path{
+				fill: #fff;
+			}
+		}
+	}
+}
+
+.prose-base :where(p):not(:where([class~=not-prose],[class~=not-prose] *)) {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.prose-base :where(h2):not(:where([class~=not-prose],[class~=not-prose] *)) {
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.prose-base :where(h3):not(:where([class~=not-prose],[class~=not-prose] *)) {
+	font-size: 18px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.prose-base :where(ul):not(:where([class~=not-prose],[class~=not-prose] *)) {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.prose-base{
+	color:#040304;
+}

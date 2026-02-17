@@ -1,0 +1,19 @@
+/**
+* Footer
+ */
+
+.copyright{
+  font-size: 12px;
+  @include respond(375){
+    font-size: 14px;
+  }
+}
+#menu-footer-menu li:not(:last-child)::after {
+  content: " /";
+  margin: 0 3px 0 0;
+}
+#menu-footer-menu{
+  li a {
+    text-decoration: underline;
+  }
+}

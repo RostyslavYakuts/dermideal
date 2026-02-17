@@ -1,0 +1,129 @@
+.home-form{
+  .iti--inline-dropdown,.iti--allow-dropdown{
+    width:100%;
+  }
+  .iti__selected-dial-code{
+    font-size:14px;
+  }
+  .iti__search-input-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .iti__search-input{
+      padding-left: 30px;
+    }
+  }
+  label{
+    font-size:14px;
+  }
+  input[type="text"],input[type="email"],input[type="tel"],textarea{
+    border:1px solid #D7D7D7;
+    border-radius: 12px;
+    width: 100%;
+    margin-top:8px;
+    padding-left:12px;
+    font-size:14px;
+    &:focus{
+      border:1px solid $brand;
+    }
+  }
+  input[type="text"],input[type="email"],input[type="tel"]{
+    height:45px;
+  }
+  textarea{
+    padding-top:12px;
+    resize: none;
+    height:108px;
+  }
+  input.error{
+    border:1px solid $error;
+  }
+  .error-msg{
+    color: $error;
+    font-size:14px;
+  }
+}
+.form-group.has-error{
+  input,textarea{
+    border:1px solid $error;
+  }
+}
+
+.file__item {
+  display: flex;
+  align-items: center;
+  padding: 3px 7px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  overflow: hidden;
+}
+.item__close {
+  display: flex;
+  margin-right: 7px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.item__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.file-list {
+  max-width: 370px;
+  width: 100%;
+}
+
+.contacts-modal{
+
+  border-radius: 8px;
+  background: #202020;
+  box-shadow: 0px 8px 10px 0px #00000033;
+  .result-message{
+    h3{
+      font-size:18px;
+      font-family:$font-family-sb;
+      color:#fff
+    }
+    span{
+      color:#ACACAC;
+      font-size: 14px;
+    }
+  }
+}
+.contacts-modal.success{
+  .svg-result-icon.failed{
+    display:none;
+  }
+  .svg-result-icon.success{
+    display:block;
+  }
+  &:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:71px;
+    height:71px;
+    z-index: 11;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 237, 81, 0.12) 0%, rgba(0, 237, 123, 0) 100%);
+  }
+}
+.contacts-modal.failed{
+  .svg-result-icon.failed{
+    display:block;
+  }
+  .svg-result-icon.success{
+    display:none;
+  }
+  &:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:71px;
+    height:71px;
+    z-index: 11;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(240, 66, 72, 0.13) 0%, rgba(240, 66, 72, 0) 100%);
+  }
+}

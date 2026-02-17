@@ -1,0 +1,39 @@
+/* Header */
+
+@import "components/main-menu";
+@import "components/hamburger";
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.header-scrolled-tray{
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  z-index: 20;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100px;
+  height: 65px;
+}
+
+.total-header-container .inner-header {
+  transition: width .7s ease;
+  transform: translateX(0);
+  @include respond(1200){
+    position: absolute;
+    right:0;
+  }
+}
+
+.total-header-container.header-scrolled-tray .inner-header {
+  width: 100px;
+}
+
+.total-header-container:not(.header-scrolled-tray) .inner-header {
+  width: 100%;
+}

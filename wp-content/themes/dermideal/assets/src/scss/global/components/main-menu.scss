@@ -1,0 +1,33 @@
+/**
+* Main Menu Component
+ */
+.main-menu{
+	z-index: 111;
+	ul{
+		@include respond_max(1199){
+			align-items: center;
+			margin:220px 0 0 0;
+		}
+		li{
+			a{
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			@include respond_max(1199){
+				width:100%;
+				text-align:center;
+			}
+		}
+	}
+
+	.empty-link{
+		position:relative;
+	}
+}
+.top-menu-wrapper {
+	@include respond_max(1199) {
+		min-height: 100vh;
+		padding-bottom: env(safe-area-inset-bottom);
+	}
+}

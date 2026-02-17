@@ -1,0 +1,23 @@
+name: Deploy to Hostinger via FTP
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Deploy theme to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /domains/dermideal.com/public_html/wp-content/themes/dermideal/
+          local-dir: ./wp-content/themes/dermideal/

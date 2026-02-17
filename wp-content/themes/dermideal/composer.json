@@ -1,0 +1,21 @@
+{
+  "name": "derm/ideal",
+  "description": "Custom wordpress theme",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name":"Step++",
+      "email":"rostwirt@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "di\\App\\": "App",
+      "di\\acf\\": "acf"
+    }
+  },
+  "require": {
+    "duncan3dc/blade": "^4.16"
+  }
+}
