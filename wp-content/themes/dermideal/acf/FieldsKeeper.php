@@ -5,7 +5,7 @@ class FieldsKeeper{
     public function __construct(){
         $this->init();
         add_action('admin_menu', function() {
-            remove_menu_page('edit.php?post_type=acf-field-group');
+            //remove_menu_page('edit.php?post_type=acf-field-group');
         }, 999);
     }
     protected function init(): void

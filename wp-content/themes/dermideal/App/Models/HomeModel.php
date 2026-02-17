@@ -17,17 +17,16 @@ class HomeModel implements ModelInterface
         return [
             'id' => $id,
             'h1'=> $h1,
-            'background_image'=>get_the_post_thumbnail($id,'full',['class'=>'object-cover absolute top-0 left-0 z-0 w-full h-full']),
+            'background_image'=>get_the_post_thumbnail($id,'full',['class'=>'object-contain md:object-cover absolute top-0 left-0 z-0 w-full h-auto md:h-full']),
             'description'=>get_field('description', $id)??'',
             'cta_text'=>get_field('cta_text',$id) ?? '',
             'cta_link'=>get_field('cta_link',$id) ?? '',
             'services'=>get_field('services',$id) ?? [],
 
-            'about_us_section_title'=>get_field('about_us_section_title',$id) ?? '',
-            'about_us_section_description'=>get_field('about_us_section_description',$id) ?? '',
-            'about_us_section_statistic'=>get_field('about_us_section_statistic',$id) ?? [],
-            'about_us_section_video'=>get_field('about_us_section_video',$id) ?? '',
-            'about_us_section_video_background'=>get_field('about_us_section_video_background',$id) ?? [],
+            'advantages_section_title'=>get_field('advantages_section_title',$id) ?? '',
+            'advantages_section_description'=>get_field('advantages_section_description',$id) ?? '',
+            'advantages_section_features'=>get_field('advantages_section_features',$id) ?? [],
+            'advantages_section_slider'=>get_field('advantages_section_slider',$id) ?? [],
 
             'cases_section_title'=>get_field('cases_section_title',$id) ?? '',
             'cases_section_cta_text'=>get_field('cases_section_cta_text',$id) ?? '',
