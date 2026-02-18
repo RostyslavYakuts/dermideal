@@ -1,6 +1,6 @@
 
 <div class="w-full bg-brand">
-    <section id="advantages" class="container mx-auto about-us pt-[100px] pb-[30px]">
+    <section id="advantages" class="container mx-auto pt-[100px] pb-[30px]">
         <div class="flex flex-col md:flex-row justify-between items-start">
             <h2 class="text-[38px] l:text-[48px] mt-3 l:max-w-[50%] text-brand-light">
                 <?php echo $data['advantages_section_title']; ?>

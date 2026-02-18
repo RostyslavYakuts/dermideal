@@ -28,6 +28,16 @@ class HomeModel implements ModelInterface
             'advantages_section_features'=>get_field('advantages_section_features',$id) ?? [],
             'advantages_section_slider'=>get_field('advantages_section_slider',$id) ?? [],
 
+            'statistic_section_title'=>get_field('statistic_section_title',$id) ?? '',
+            'statistic_section_marks'=>get_field('statistic_section_marks',$id) ?? [],
+
+            'top_product_title'=>get_field('top_product_title',$id) ?? '',
+            'top_product_image'=>get_field('top_product_image',$id) ?? [],
+            'top_product_short_description'=>get_field('top_product_short_description',$id) ?? '',
+            'top_product_features'=>get_field('top_product_features',$id) ?? '',
+            'top_product_description'=>get_field('top_product_description',$id) ?? '',
+            'top_product_link'=>get_field('top_product_link',$id) ?? '',
+
             'cases_section_title'=>get_field('cases_section_title',$id) ?? '',
             'cases_section_cta_text'=>get_field('cases_section_cta_text',$id) ?? '',
             'cases_section_cta_link'=>get_field('cases_section_cta_link',$id) ?? '',

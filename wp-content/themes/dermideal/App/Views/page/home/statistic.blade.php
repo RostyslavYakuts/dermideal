@@ -1,0 +1,21 @@
+{{-- Home Statistic --}}
+<div class="w-full bg-brand-light-orange">
+    <section id="statistic" class="container mx-auto py-[60px]">
+        <div class="flex flex-col gap-6 mdx:flex-row justify-between items-start">
+            <h2 class="text-[32px] w-full text-brand-gold">
+                {!! $data['statistic_section_title'] !!}
+            </h2>
+            @if($data['statistic_section_marks'])
+                <div class="w-full flex flex-col smx:flex-row justify-between items-start smx:items-center">
+                    @foreach($data['statistic_section_marks'] as $mark)
+                        <div class="flex flex-col gap-3 text-brand-gold">
+                            <b class="text-4xl">{{$mark['mark']}}</b>
+                            <span class="uppercase">{{$mark['title']}}</span>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
+        </div>
+
+    </section>
+</div>
