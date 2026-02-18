@@ -1,5 +1,9 @@
 .bg-slider {
   inset: 0;
+  position:absolute;
+  z-index:0;
+  top:0;
+  left:0;
 }
 
 .bg-slider .swiper-slide {

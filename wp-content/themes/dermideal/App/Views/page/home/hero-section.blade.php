@@ -21,7 +21,7 @@
 
         </div>
     </div>
-    <div class="bg-slider swiper absolute z-0 top-0 left-0">
+    <div class="bg-slider swiper">
         <div class="swiper-wrapper">
             @foreach($bg_slider as $slide)
                 <div class="swiper-slide w-full h-full"
