@@ -28,7 +28,7 @@
                         </figure>
 
                         <div class="flex flex-col gap-2 text-brand-light">
-                          <span class="uppercase flex items-center gap-2 leading-none">
+                          <span class="font-semibold uppercase flex items-center gap-2 leading-none">
                             <?php echo e($item['title']); ?>
 
                           </span>

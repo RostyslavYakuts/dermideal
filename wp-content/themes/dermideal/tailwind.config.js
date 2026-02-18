@@ -68,6 +68,7 @@ module.exports = {
 				DEFAULT:'#325956',
 				'hover':'rgb(34,63,60)',
 				'light':'#bdc7a2',
+				'beige':'#f6f2d3',
 				'gold':'#db9b3c',
 				'light-orange':'#f1ded1',
 				'light-purple':'#edc8e5',
@@ -75,6 +76,7 @@ module.exports = {
 				'purple-hover':'#4c1b62',
 				'light-green':'#c8d1af',
 				'yellow-green':'#a39135',
+				'yellow-green-dark':'#9b8f2230',
 				'green':'#577270'
 
 			},

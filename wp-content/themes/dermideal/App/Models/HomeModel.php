@@ -49,7 +49,9 @@ class HomeModel implements ModelInterface
             'banner_cta_link'=>get_field('banner_cta_link',$id) ?? '',
 
             'motivation_section_title'=>get_field('motivation_section_title', $id)??'',
+            'motivation_section_short_description'=>get_field('motivation_section_short_description', $id)??'',
             'motivation_section_description'=>get_field('motivation_section_description', $id)??'',
+            'motivation_section_image'=>get_field('motivation_section_image', $id) ?? [],
             'arguments_list'=>get_field('arguments_list', $id) ?? [],
 
             'testimonials_title' => get_field('testimonials_title', $id) ?? '',

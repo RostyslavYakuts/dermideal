@@ -1,62 +1,38 @@
 {{-- Home Motivation Section --}}
-@php
-    $star_icon = '<div class="min-w-[29px] l:min-w-auto l:w-auto"><svg class="w-[18px] h-[20px] min-w-[18px] min-h-[20px] max-w-[18px] max-h-[20px]" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8.33691" width="1.29028" height="20" fill="#19C37A"/>
-                        <rect width="1.29031" height="19.9995" transform="matrix(0.499987 0.866033 -0.866018 0.500013 17.3198 4.44043)" fill="#19C37A"/>
-                        <rect width="1.29031" height="19.9995" transform="matrix(-0.499987 0.866033 -0.866018 -0.500013 17.9656 14.4404)" fill="#19C37A"/>
-                    </svg></div>';
-    $slash_icon = '<div class="min-w-[29px] l:min-w-auto l:w-auto"><svg class="w-[29px] h-[29px] min-w-[29px] min-h-[29px] max-w-[29px] max-h-[29px]" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.3949 3.654L24.9153 3.20038L24.4617 4.72078L4.72151 24.4609L3.20112 24.9146L3.65473 23.3942L23.3949 3.654Z" fill="#19C37A"/>
-                        <path d="M17.7664 3.94829L20.3137 3.53455L3.53454 20.3137L4.44177 17.2729L17.7664 3.94829Z" fill="#19C37A"/>
-                        <path d="M24.167 10.3477L24.5808 7.80041L7.80161 24.5795L10.8424 23.6723L24.167 10.3477Z" fill="#19C37A"/>
-                    </svg></div>';
-    $argument_common_tw = 'w-full l:w-[46.5%] l:max-w-[540px] l:max-h-[80px] py-[20px] px-[12px] rounded-[20px] bd-white shadow-custom-shadow flex items-start gap-2';
 
-@endphp
-<div id="motivation" class="pt-[80px] l:pt-[120px] "></div>
-<section class="container mx-auto">
-    <div class="flex flex-col gap-[12px] md:flex-row md:justify-between md:items-center">
+<section id="motivation" class="w-full bg-brand-beige flex flex-col lgx:flex-row lgx:items-center">
+    <div class="px-[25px] py-[50px] lgx:px-[100px] lgx:py-0 flex flex-col gap-6 text-brand-yellow-green">
         <h2 class="w-full text-[36px] l:text-[48px]">
             {!! $data['motivation_section_title'] !!}
         </h2>
-        <p class="w-full text-sm l:text-base max-w-[369px] text-brand-text">{{$data['motivation_section_description']}}</p>
-    </div>
-    <div class="arguments-list my-[40px] l:my-[60px] flex flex-col gap-5" >
-        @if($data['arguments_list'])
-            @foreach($data['arguments_list'] as $index => $list)
-                @php
-                    $argument = '';
-                    if($index === 0){
-                        $argument = '<div class="flex w-full l:justify-end"><div class="'.$argument_common_tw.' l:mr-[160px]">
-                        '.$star_icon.'
-                        <span class="text-sm l:text-base">'.$list['argument'].'</span>
-                        </div></div>';
-                    }
-                    if($index === 1){
-                        $argument = '<div class="flex flex-col l:flex-row l:justify-between gap-5">
-                        <div class="'.$argument_common_tw.'">
-                        '.$slash_icon.'
-                        <span class="text-sm l:text-base">'.$list['argument'].'</span>
-                        </div>';
-                    }
-                    if($index === 2){
-                         $argument = '
-                        <div class="'.$argument_common_tw.' l:mt-[36px]">
-                        '.$star_icon.'
-                        <span class="text-sm l:text-base">'.$list['argument'].'</span>
-                        </div></div>';
-                    }
-                    if($index === 3){
-                           $argument = '
-                        <div class="'.$argument_common_tw.' l:ml-[160px]">
-                        '.$slash_icon.'
-                        <span class="text-sm l:text-base">'.$list['argument'].'</span>
-                        </div>';
-                    }
+        <p class="font-semibold w-full text-sm l:text-base text-brand-text">
+            {{$data['motivation_section_short_description']}}
+        </p>
+        <p class="w-full text-sm l:text-base text-brand-text">
+            {{$data['motivation_section_description']}}
+        </p>
 
-                @endphp
-                    {!! $argument !!}
+        @if($data['arguments_list'])
+            @foreach($data['arguments_list'] as $argument)
+                 <div class="flex flex-row gap-2 items-center">
+                     <figure class="flex justify-center items-center bg-brand-yellow-green-dark rounded-full min-w-[70px] w-[70px] h-[70px] p-2">
+                         <img
+                              class="w-[40px] h-[40px] object-cover"
+                              width="40" height="40" loading="lazy"
+                              decoding="async"
+                              src="{{$argument['image']['url']}}"
+                              alt="{{$argument['image']['alt']}}">
+                     </figure>
+
+                     <div class="flex flex-col gap-2">
+                         <span class="text-xl font-semibold">{{$argument['title']}}</span>
+                         <span class="text">{{$argument['argument']}}</span>
+                     </div>
+                 </div>
             @endforeach
         @endif
-    </>
+        </div>
+    <img class="w-full h-auto max-h-[820px] lgx:w-[50%] object-cover" width="920" height="820"
+         src="{{$data['motivation_section_image']['url']}}"
+         alt="{{$data['motivation_section_image']['src']}}" loading="lazy" decoding="async">
 </section>

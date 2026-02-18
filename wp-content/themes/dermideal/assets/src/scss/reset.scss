@@ -48,10 +48,10 @@ body.shadow{
 h1,h2,h3,.h1,.h2,.h3{
 	font-family: $font-family;
 	line-height: 1.2;
-	.bold, b, strong{
-		font-family: $font-family-sb;
-		font-weight: 500;
-	}
+}
+.bold, b, strong{
+	font-family: $font-family-sb;
+	font-weight: 500;
 }
 .font-bold{
 	font-family: $font-family-b;
@@ -61,7 +61,9 @@ h1,h2,h3,.h1,.h2,.h3{
 	font-family: $font-family-m;
 	font-weight: 500;
 }
-
+span,p{
+	font-family: $font-family-l;
+}
 .total-header{
 	z-index: 1111;
 }
