@@ -32,7 +32,7 @@
             @endforeach
         @endif
         </div>
-    <img class="w-full h-auto max-h-[820px] lgx:w-[50%] object-cover" width="920" height="820"
+    <img class="w-full h-auto max-h-[820px] lgx:min-w-[50%] lgx:w-[50%] object-cover" width="920" height="820"
          src="{{$data['motivation_section_image']['url']}}"
          alt="{{$data['motivation_section_image']['src']}}" loading="lazy" decoding="async">
 </section>
