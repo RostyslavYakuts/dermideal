@@ -5,8 +5,8 @@
 ?>
 
 <a href="<?php echo e($cart_url); ?>"
-   class="rounded-full relative text-brand font-bold p-3 shadow-lg flex items-center space-x-2 z-50">
-    <svg width="24" height="24" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="stroke:#325956"><path d="M1 10C1 8.89543 1.89543 8 3 8H21C22.1046 8 23 8.89543 23 10V25C23 27.2091 21.2091 29 19 29H5C2.79086 29 1 27.2091 1 25V10Z" stroke-width="2"></path><path d="M17 12V6C17 3.23858 14.7614 1 12 1V1C9.23858 1 7 3.23858 7 6V12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+   class="rounded-full relative text-brand font-bold p-3 shadow-lg text-xl flex items-center space-x-2 z-50">
+    <i class="fa fa-shopping-bag text-brand" aria-hidden="true"></i>
     <span class="absolute top-0 -right-[5px] text-sm"><?php echo e($cart_count); ?></span>
 </a>
 <?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/global/header/cart.blade.php ENDPATH**/ ?>

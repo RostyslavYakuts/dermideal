@@ -1,7 +1,7 @@
 
 <div class="w-full flex flex-col-reverse gap-6 smx:flex-row justify-between items-center">
 	<div class="copyright text-sm text-light-gray">
-		© <?php echo e(date("Y")); ?>, IT Dev Staff. All rights reserved.
+		© <?php echo e(date("Y")); ?>, DERMIDEAL.COM - All rights reserved.
 	</div>
 
 	<?php

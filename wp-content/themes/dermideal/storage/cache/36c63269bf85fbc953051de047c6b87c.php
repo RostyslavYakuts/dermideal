@@ -3,11 +3,12 @@
     /**
     * @var array $data
     */
+    $bg_slider = $data['bg_slider'];
 ?>
-<section id="hero_section"  class="h-calc-100-110 bg-brand-light relative mt-[110px] w-full hero-section home-hero-section flex flex-col ">
+<section id="hero_section"  class="h-calc-100-110 relative mt-[110px] w-full hero-section home-hero-section flex flex-col ">
     <div class="container mx-auto flex flex-col relative z-10">
-        <div class="mt-[110px] l:mt-[168px] flex flex-col justify-center gap-12">
-            <h1 class="text-brand text-[40px] l:text-[64px] max-w-[550px] leading-none">
+        <div class="max-w-[550px] p-4 bg-[#ffffff99] mt-[110px] l:mt-[168px] flex flex-col justify-center gap-12">
+            <h1 class="text-brand text-[40px] l:text-[64px] leading-none">
                 <?php echo e($data['h1']); ?>
 
             </h1>
@@ -22,8 +23,15 @@
 
         </div>
     </div>
-    <?php echo $data['background_image']; ?>
-
+    <div class="bg-slider swiper absolute z-0 top-0 left-0">
+        <div class="swiper-wrapper">
+            <?php $__currentLoopData = $bg_slider; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $slide): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <div class="swiper-slide w-full h-full"
+                     style="background-image:url('<?php echo e($slide['image']['url']); ?>')">
+                </div>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        </div>
+    </div>
 </section>
 
 

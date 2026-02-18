@@ -3,11 +3,12 @@
     /**
     * @var array $data
     */
+    $bg_slider = $data['bg_slider'];
 @endphp
-<section id="hero_section"  class="h-calc-100-110 bg-brand-light relative mt-[110px] w-full hero-section home-hero-section flex flex-col ">
+<section id="hero_section"  class="h-calc-100-110 relative mt-[110px] w-full hero-section home-hero-section flex flex-col ">
     <div class="container mx-auto flex flex-col relative z-10">
-        <div class="mt-[110px] l:mt-[168px] flex flex-col justify-center gap-12">
-            <h1 class="text-brand text-[40px] l:text-[64px] max-w-[550px] leading-none">
+        <div class="max-w-[550px] p-4 bg-[#ffffff99] mt-[110px] l:mt-[168px] flex flex-col justify-center gap-12">
+            <h1 class="text-brand text-[40px] l:text-[64px] leading-none">
                 {{$data['h1']}}
             </h1>
 
@@ -20,7 +21,15 @@
 
         </div>
     </div>
-    {!! $data['background_image'] !!}
+    <div class="bg-slider swiper absolute z-0 top-0 left-0">
+        <div class="swiper-wrapper">
+            @foreach($bg_slider as $slide)
+                <div class="swiper-slide w-full h-full"
+                     style="background-image:url('{{$slide['image']['url']}}')">
+                </div>
+            @endforeach
+        </div>
+    </div>
 </section>
 
 

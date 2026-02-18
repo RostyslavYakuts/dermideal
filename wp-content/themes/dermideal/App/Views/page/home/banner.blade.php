@@ -5,11 +5,10 @@
      */
     $style = '';
     if($data['banner_image']){
-        $style = 'background: url(' . $data['banner_image']['url'] .') no-repeat;
-        background-size:cover; background-attachment:fixed;';
+        $style = 'background: url(' . $data['banner_image']['url'] .') no-repeat;background-size: cover;';
     }
 @endphp
-<section style="{{$style}}" id="banner" class="relative w-full bg-brand py-[60px] l:py[80px] flex flex-col items-center gap-6">
+<section style="{{$style}}" id="banner" class="banner relative w-full py-[60px] l:py[80px] flex flex-col items-center gap-6">
 
     <div class="flex flex-col items-center justify-center gap-6 relative z-10 text-brand">
         <h2 class="px-[20px] text-[36px] l:text-[48px] text-center">

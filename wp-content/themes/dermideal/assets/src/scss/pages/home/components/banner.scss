@@ -1,0 +1,12 @@
+/**
+* Banner
+ */
+.banner {
+    animation: moveBgVertical 20s linear infinite;
+}
+
+@keyframes moveBgVertical {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
