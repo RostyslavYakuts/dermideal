@@ -231,8 +231,8 @@
                     "label": "Icon",
                     "name": "icon",
                     "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
+                    "type": "text",
+                    "instructions": "Fontawesome class (fa-facebook)",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -240,16 +240,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
                     "parent_repeater": "field_6970d0ea1ba1d"
                 },
                 {
@@ -271,46 +266,6 @@
                     "parent_repeater": "field_6970d0ea1ba1d"
                 }
             ]
-        },
-        {
-            "key": "field_690f37395b55c",
-            "label": "Cookies Title",
-            "name": "cookies_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_690f374c5b55d",
-            "label": "Cookies Description",
-            "name": "cookies_description",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
         },
         {
             "key": "field_690f5c1e79635",
@@ -449,5 +404,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1769081024
+    "modified": 1771490025
 }

@@ -1,0 +1,10 @@
+.stock-pagination{
+  .swiper-pagination-bullet-active{
+    background: $brand;
+  }
+}
+.stock-swiper{
+  .swiper-slide{
+    display:flex!important;
+  }
+}

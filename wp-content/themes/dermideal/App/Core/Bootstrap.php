@@ -29,7 +29,6 @@ class Bootstrap
         (new PermalinkInitializer())->register();
         (new ACFInteractionSetup())->initialize();
         (new YoastInteractionSetup)->initialize();
-        new  WooSetup;
         (new CommentsSetup)->initialize();
         (new DefaultHeadIncludesCleaner)->initialize();
         (new EmojiSetup)->initialize();
@@ -38,6 +37,7 @@ class Bootstrap
         (new NavMenuSetup)->initialize();
         (new ThumbnailSetup)->initialize();
         (new Enqueuer)->initialize();
+        new  WooSetup;
         new CPTRegistrar;
         new PaginationController;
         new AjaxHandler();

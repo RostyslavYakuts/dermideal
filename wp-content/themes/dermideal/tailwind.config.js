@@ -84,6 +84,7 @@ module.exports = {
 			current:'currentColor',
 			'error': '#ED0703',
 			'white':'#ffffff',
+			'half-white':'rgba(255,255,255,0.69)',
 			'light-gray':'#ACACAC',
 			'light-blue':'#EFF5FD',
 			'dark-blue':'#04122C',

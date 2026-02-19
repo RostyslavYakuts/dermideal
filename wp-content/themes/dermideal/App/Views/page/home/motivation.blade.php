@@ -1,6 +1,6 @@
 {{-- Home Motivation Section --}}
 
-<section id="motivation" class="w-full bg-brand-beige flex flex-col lgx:flex-row lgx:items-center">
+<section id="motivation" class="w-full bg-white flex flex-col lgx:flex-row lgx:items-center">
     <div class="px-[25px] py-[50px] lgx:px-[100px] lgx:py-0 flex flex-col gap-6 text-brand-yellow-green">
         <h2 class="w-full text-[36px] l:text-[48px]">
             {!! $data['motivation_section_title'] !!}

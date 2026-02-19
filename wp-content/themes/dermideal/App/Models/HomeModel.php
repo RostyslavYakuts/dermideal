@@ -14,6 +14,33 @@ class HomeModel implements ModelInterface
     {
         $id = $this->page->ID;
         $h1 = get_field('h1', $id) ?: '';
+        $parents = get_terms([
+            'taxonomy'   => 'product_cat',
+            'parent'     => 0,
+            'hide_empty' => false,
+            'orderby'    => 'name',
+            'order'      => 'ASC',
+        ]);
+        $categories = [];
+
+        foreach ($parents as $parent) {
+
+            $children = get_terms([
+                'taxonomy'   => 'product_cat',
+                'parent'     => $parent->term_id,
+                'hide_empty' => false,
+                'orderby'    => 'name',
+                'order'      => 'ASC',
+            ]);
+
+            if ($children) {
+                $categories[] = [
+                    'parent'   => $parent,
+                    'children' => $children,
+                ];
+            }
+        }
+
         return [
             'id' => $id,
             'h1'=> $h1,
@@ -22,6 +49,12 @@ class HomeModel implements ModelInterface
             'cta_text'=>get_field('cta_text',$id) ?? '',
             'cta_link'=>get_field('cta_link',$id) ?? '',
             'bg_slider'=>get_field('bg_slider',$id) ?? [],
+
+            'categories'=>$categories ?? [],
+
+            'stock_title'=>get_field('stock_title',$id) ?? '',
+            'stock_description'=>get_field('stock_description',$id) ?? '',
+            'stock'=>get_field('stock',$id) ?? [],
 
             'bestsellers_title'=>get_field('bestsellers_title',$id) ?? '',
             'bestsellers'=>get_field('bestsellers',$id) ?? [],
@@ -55,7 +88,12 @@ class HomeModel implements ModelInterface
 
             'testimonials_title' => get_field('testimonials_title', $id) ?? '',
             'testimonials_description' => get_field('testimonials_description', $id) ?? '',
-            'testimonials_slider' => get_field('testimonials_slider', $id),
+            'testimonials_slider' => get_field('testimonials_slider', $id) ?? [],
+
+
+            'brands_title' => get_field('brands_title', $id) ?? '',
+            'brands_description' => get_field('brands_description', $id) ?? '',
+            'brands' => get_field('brands', $id) ?? [],
 
 
             'title' => get_the_title(),

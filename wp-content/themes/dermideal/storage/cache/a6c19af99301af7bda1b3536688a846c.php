@@ -4,7 +4,7 @@
      * @var array $options
      */
 ?>
-<footer id="footer"  class="w-full bg-black l:h-[390px] py-[60px]">
+<footer id="footer"  class="w-full bg-brand-light l:h-[390px] py-[60px]">
     <div class="container mx-auto flex flex-col justify-between gap-[60px]">
         <?php echo $__env->make('global.footer.logotype', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
         <?php echo $__env->make('global.footer.footer-contacts', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>

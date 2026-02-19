@@ -6,7 +6,7 @@
     $features = $data['top_product_features'];
     $features_arr = explode(',',$features);
 ?>
-<section id="top_product" class="w-full bg-brand-light-purple flex flex-col lgx:flex-row md:items-center">
+<section id="top_product" class="w-full bg-white flex flex-col lgx:flex-row md:items-center">
     <img class="w-full h-auto lgx:max-w-[50%] object-cover"
          width="921" height="712" loading="lazy" decoding="async"
          src="<?php echo e($data['top_product_image']['url']); ?>" alt="<?php echo e($data['top_product_image']['alt']); ?>">

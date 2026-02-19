@@ -1,5 +1,5 @@
 
-<div class="w-full bg-brand-light-orange">
+<div class="w-full bg-white">
     <section id="statistic" class="container mx-auto py-[60px]">
         <div class="flex flex-col gap-6 mdx:flex-row justify-between items-start">
             <h2 class="text-[32px] w-full text-brand-gold">
@@ -10,7 +10,7 @@
                 <div class="w-full flex flex-col smx:flex-row justify-between items-start smx:items-center">
                     <?php $__currentLoopData = $data['statistic_section_marks']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $mark): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="flex flex-col gap-3 text-brand-gold">
-                            <b class="text-4xl"><?php echo e($mark['mark']); ?></b>
+                            <b data-statistic="<?php echo e($mark['mark']); ?>" class="animate-number-js text-4xl"></b>
                             <span class="uppercase"><?php echo e($mark['title']); ?></span>
                         </div>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

@@ -23,7 +23,7 @@
 
         </div>
     </div>
-    <div class="bg-slider swiper absolute z-0 top-0 left-0">
+    <div class="bg-slider swiper">
         <div class="swiper-wrapper">
             <?php $__currentLoopData = $bg_slider; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $slide): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="swiper-slide w-full h-full"

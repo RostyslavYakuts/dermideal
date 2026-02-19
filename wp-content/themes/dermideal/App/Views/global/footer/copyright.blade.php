@@ -1,13 +1,13 @@
 {{-- Copyright --}}
 <div class="w-full flex flex-col-reverse gap-6 smx:flex-row justify-between items-center">
-	<div class="copyright text-sm text-light-gray">
+	<div class="copyright text-sm text-brand">
 		© {{ date("Y") }}, DERMIDEAL.COM - All rights reserved.
 	</div>
 
 	@php
             wp_nav_menu([
                 'theme_location' => 'footer_menu',
-                'menu_class' => 'flex items-center text-sm text-[#ACACAC]',
+                'menu_class' => 'flex items-center gap-2 text-sm text-brand',
                 'container' => false,
             ]);
 	@endphp
