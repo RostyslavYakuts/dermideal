@@ -39,7 +39,7 @@
                                                 loading="lazy"
                                                 decoding="async"
                                                 src="{{ $image }}"
-                                                alt="{{ $child->name }}"
+                                                alt="Категорія - {{ $child->name }}"
                                                 class="w-full aspect-square object-cover"
                                         >
                                     @endif

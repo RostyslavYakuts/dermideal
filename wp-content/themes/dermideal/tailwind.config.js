@@ -178,6 +178,7 @@ module.exports = {
   plugins: [
 	  require('@tailwindcss/typography'),
 	  require('tailwindcss-content-visibility'),
+	  require('@tailwindcss/line-clamp'),
   ],
   corePlugins: {
 	  tableLayout: true,

@@ -17,7 +17,15 @@
                 @foreach($data['advantages_section_features'] as $item)
                     <div class="flex flex-row gap-3 mdx:justify-center md:items-center">
                         <figure class="bg-brand-light rounded-full p-3 min-w-[70px] w-[70px] h-[70px] flex justify-center items-center">
-                            <img class="w-[40px] h-[40px]" width="40" height="40" src="{{$item['icon']['url']}}" alt="{{$item['icon']['alt']}}" title="{{$item['title']}}">
+                            <img class="w-[40px] h-[40px]"
+                                 width="40"
+                                 height="40"
+                                 src="{{$item['icon']['url']}}"
+                                 alt="{{$item['icon']['alt']}}"
+                                 title="{{$item['title']}}"
+                                 loading="lazy"
+                                 decoding="async"
+                            >
                         </figure>
 
                         <div class="flex flex-col gap-2 text-brand-light">
@@ -51,14 +59,14 @@
                     @endforeach
                 </div>
             </div>
-            <div class="adv-prev absolute left-0 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
+            <button aria-label="Prev" class="adv-prev absolute left-0 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
                 text-brand-light text-4xl cursor-pointer select-none px-3">
                 &#10094;
-            </div>
-            <div class="adv-next absolute right-0 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
+            </button>
+            <button aria-label="Next" class="adv-next absolute right-0 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
                 text-brand-light text-4xl cursor-pointer select-none px-3">
                 &#10095;
-            </div>
+            </button>
         </div>
 
 

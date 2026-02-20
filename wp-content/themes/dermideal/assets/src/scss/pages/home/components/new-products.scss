@@ -1,0 +1,10 @@
+.new-products-slider{
+  .swiper-slide{
+    display:flex;
+  }
+}
+.new-products-pagination{
+  .swiper-pagination-bullet-active{
+    background: $brand;
+  }
+}

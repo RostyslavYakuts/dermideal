@@ -39,7 +39,7 @@
                                 >
                                 <h3 class="text-center text-lg font-semibold">{{$product->get_name()}}</h3>
                                 <p class="text-sm">{!! $product->get_price_html() !!}</p>
-                                <button class="bg-brand hover:bg-brand-hover text-white p-3 rounded ">
+                                <button aria-label="Visit" class="bg-brand hover:bg-brand-hover text-white p-3 rounded ">
                                     Переглянути
                                 </button>
                             </a>
@@ -49,14 +49,14 @@
                 @endforeach
             </div>
         </div>
-        <div class="bestsellers-button-prev absolute left-0 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
+        <button aria-label="Prev" class="bestsellers-button-prev absolute left-0 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
                 text-brand text-4xl cursor-pointer select-none px-3">
             &#10094;
-        </div>
-        <div class="bestsellers-button-next absolute right-0 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
+        </button>
+        <button aria-label="Next" class="bestsellers-button-next absolute right-0 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
                 text-brand text-4xl cursor-pointer select-none px-3">
             &#10095;
-        </div>
+        </button>
         <div class="bestsellers-pagination  mt-4 flex justify-center gap-1 items-center mx-auto"></div>
     </div>
 

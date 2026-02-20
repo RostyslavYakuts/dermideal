@@ -22,6 +22,8 @@ wordpress/
 /wp-content/wp-rocket-config
 /wp-content/wpo-cache
 /wp-content/webp-express
+/wp-content/ai1wm-backups
+/wp-content/ai1wm-backups/
 # ENV
 .env
 # Logs

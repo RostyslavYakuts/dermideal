@@ -16,6 +16,7 @@
   "author": "RostWirt <rostwirt@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "0.5.10",
     "autoprefixer": "^10.4.0",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
@@ -44,9 +45,9 @@
   },
   "dependencies": {
     "dompurify": "^3.2.5",
-    "jquery": "^3.7.1",
-    "swiper": "^12.0.3",
     "intl-tel-input": "^25.3.2",
-    "libphonenumber-js": "^1.12.26"
+    "jquery": "^3.7.1",
+    "libphonenumber-js": "^1.12.26",
+    "swiper": "^12.0.3"
   }
 }

@@ -40,7 +40,7 @@
                                                 loading="lazy"
                                                 decoding="async"
                                                 src="<?php echo e($image); ?>"
-                                                alt="<?php echo e($child->name); ?>"
+                                                alt="Категорія - <?php echo e($child->name); ?>"
                                                 class="w-full aspect-square object-cover"
                                         >
                                     <?php endif; ?>

@@ -6,6 +6,7 @@
     @include('page.home.stock')
     @include('page.home.categories')
     @include('page.home.bestsellers')
+    @include('page.home.new-products')
     @include('page.home.top-product')
     @include('page.home.motivation')
     @include('page.home.statistic')

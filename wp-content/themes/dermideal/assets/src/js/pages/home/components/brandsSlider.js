@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
+import {Autoplay, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+Swiper.use([Autoplay]);
 export const brandsSlider = () => {
     const slider = document.querySelector('.brands-swiper');
     if (!slider) return;
@@ -11,6 +12,10 @@ export const brandsSlider = () => {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: true,
+        },
         breakpoints: {
             640: { slidesPerView: 1, spaceBetween: 0 },
             768: { slidesPerView: 2, spaceBetween: 20 },

@@ -22,7 +22,12 @@
                                         </div>
                                         <div class="flex flex-row justify-end items-center">
                                             <div class="flex flex-row items-center gap-4">
-                                                <img class="w-[100px] h-[100px] object-cover rounded-full" width="100" height="100" src="{{$testimonial['screenshot']['url']}}"
+                                                <img class="w-[100px] h-[100px] object-cover rounded-full"
+                                                     width="100"
+                                                     height="100"
+                                                     loading="lazy"
+                                                     decoding="async"
+                                                     src="{{$testimonial['screenshot']['url']}}"
                                                      alt="{{$testimonial['screenshot']['alt']}}">
                                                 <div class="flex flex-col gap-1 text-brand-gold">
                                                     <span class="text-base font-semibold xmm:text-lg">{{$testimonial['name']}}</span>
@@ -36,14 +41,14 @@
                         @endif
                     </div>
                 </div>
-                <div class="testimonials-prev absolute hidden md:block -left-5 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
+                <button aria-label="Prev" class="testimonials-prev absolute hidden md:block -left-5 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
                 text-white text-4xl cursor-pointer select-none px-3">
                     &#10094;
-                </div>
-                <div class="testimonials-next absolute hidden md:block -right-5 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
+                </button>
+                <button aria-label="Next" class="testimonials-next absolute hidden md:block -right-5 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
                 text-white text-4xl cursor-pointer select-none px-3">
                     &#10095;
-                </div>
+                </button>
                 <div class="testimonials-swiper-pagination flex justify-center items-center gap-2 mt-4"></div>
             </div>
 
