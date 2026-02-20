@@ -11,6 +11,7 @@ module.exports = {
 	entry: {
 		main:'./assets/src/js/main.js',
 		home:'./assets/src/js/pages/home/home.js',
+		shop:'./assets/src/js/pages/shop/shop.js',
 	},
 	output: {
 		filename: '[name].[contenthash].js',

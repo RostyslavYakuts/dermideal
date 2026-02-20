@@ -1,0 +1,2 @@
+
+<h1 class="text-brand text-center uppercase font-bold text-4xl"><?php echo e($data['title']); ?></h1><?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/shop/h1.blade.php ENDPATH**/ ?>

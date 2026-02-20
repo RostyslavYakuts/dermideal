@@ -1,5 +1,7 @@
-import '@/scss/pages/shop.scss';
+import '@/scss/pages/shop/shop.scss';
+import {newProductsSwiper} from "@/js/pages/home/components/newProductsSwiper";
+import {stockSwiper} from "@/js/pages/home/components/stockSwiper";
 
-export default function () {
-    console.log('Shop logic');
-}
+
+stockSwiper();
+newProductsSwiper();

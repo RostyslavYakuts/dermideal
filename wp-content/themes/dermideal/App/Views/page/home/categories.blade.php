@@ -12,9 +12,7 @@
         <div class="categories mt-10 flex flex-col gap-10">
             @foreach($categories as $group)
                 <div class="flex flex-col gap-6">
-                    <a href="{{ get_term_link($group['parent']) }}"
-                       class="text-2xl text-brand">{{ $group['parent']->name }}
-                    </a>
+
 
                     <ul class="grid gap-6
                                grid-cols-2
@@ -46,6 +44,9 @@
 
                                     <span class="absolute top-0 left-0 w-full text-center bg-half-white p-2 transition">
                                         {{ $child->name }}
+                                    </span>
+                                    <span class="opacity-0 group-hover:opacity-100 text-lg text-brand absolute bottom-0 left-0 w-full text-center bg-half-white p-2 transition">
+                                        {{ $group['parent']->name }}
                                     </span>
 
                                 </a>

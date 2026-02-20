@@ -3,7 +3,7 @@
 namespace di\App\Controllers\Factories;
 
 use di\App\Controllers\CategoryController;
-use di\App\Controllers\ContactPageController;
+use di\App\Controllers\ShopController;
 use di\App\Controllers\ControllerInterface;
 use di\App\Controllers\Error404Controller;
 use di\App\Controllers\HomeController;
@@ -11,6 +11,7 @@ use di\App\Controllers\PageController;
 use di\App\Controllers\SingleController;
 use di\App\Controllers\TagController;
 use di\App\Models\HomeModel;
+use di\App\Models\ShopModel;
 
 
 class ControllerFactory
@@ -25,6 +26,11 @@ class ControllerFactory
 
         if (is_singular('post')) {
             return new SingleController();
+        }
+
+        if($current_obj instanceof \WP_Post_Type && is_shop()){
+            $shopModel = new ShopModel($current_obj);
+            return new ShopController($shopModel);
         }
 
         if (is_page()) {

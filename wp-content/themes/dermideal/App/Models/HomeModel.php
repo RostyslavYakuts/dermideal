@@ -4,55 +4,13 @@ namespace di\App\Models;
 
 class HomeModel implements ModelInterface
 {
+    use ProductCatalogTrait;
     public \WP_Post$page;
 
     public function __construct($page){
         $this->page = $page;
     }
 
-    private function get_products_categories(bool $hide_empty_parent = true, bool $hide_empty_child = true): array
-    {
-        $parents = get_terms([
-            'taxonomy'   => 'product_cat',
-            'parent'     => 0,
-            'hide_empty' => $hide_empty_parent,
-            'orderby'    => 'name',
-            'order'      => 'ASC',
-        ]);
-        $categories = [];
-
-        foreach ($parents as $parent) {
-
-            $children = get_terms([
-                'taxonomy'   => 'product_cat',
-                'parent'     => $parent->term_id,
-                'hide_empty' => $hide_empty_child,
-                'orderby'    => 'name',
-                'order'      => 'ASC',
-            ]);
-
-            if ($children) {
-                $categories[] = [
-                    'parent'   => $parent,
-                    'children' => $children,
-                ];
-            }
-        }
-        return $categories;
-    }
-
-    private function get_new_products(): array|\stdClass
-    {
-        $args = [
-            'status'    => 'publish',
-            'limit'     => 10,
-            'orderby'   => 'date',
-            'order'     => 'DESC',
-            'return'    => 'ids',
-        ];
-
-        return wc_get_products($args);
-    }
     public function get_post_data(): array
     {
         $id = $this->page->ID;
@@ -68,8 +26,8 @@ class HomeModel implements ModelInterface
             'cta_link'=>get_field('cta_link',$id) ?? '',
             'bg_slider'=>get_field('bg_slider',$id) ?? [],
 
-            'new_products' => $this->get_new_products(),
-            'categories'=>$this->get_products_categories(false,false),
+            'new_products' => $this->getNewProducts(),
+            'categories'=>$this->getProductsCategories(),
 
             'stock_title'=>get_field('stock_title',$id) ?? '',
             'stock_description'=>get_field('stock_description',$id) ?? '',
