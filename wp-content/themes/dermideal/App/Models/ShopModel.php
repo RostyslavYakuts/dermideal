@@ -26,6 +26,7 @@ class ShopModel implements ModelInterface
             'content' => $content,
             'new_products' => $this->getNewProducts(),
             'categories'=>$this->getProductsCategories(),
+            'tags'=>$this->getProductTags(),
             'stock'=>get_field('general_stock','options') ?? [],
         ];
 

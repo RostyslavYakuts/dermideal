@@ -1,6 +1,6 @@
 {{-- Template Part Total Header --}}
 
-<header class="total-header total-header-js bg-brand-light h-[110px] fixed top-0 right-0 w-full z-50">
+<header class="total-header total-header-js bg-white shadow h-[110px] fixed top-0 right-0 w-full z-50">
 	<div class="container mx-auto w-full flex flex-row justify-between items-center text-white text-sm">
 			<div class="header-desktop-data flex items-center">
 				@include('global.header.logotype',['options'=>$options])

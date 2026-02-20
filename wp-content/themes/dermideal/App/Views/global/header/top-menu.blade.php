@@ -5,7 +5,7 @@ l:relative l:flex l:items-center top-0 left-0 w-full l:w-auto l:top-inherit l:le
 		@php
 			wp_nav_menu([
                 'theme_location' => 'main_menu',
-                'menu_class' => 'text-lg top-menu text-brand relative z-10 l:gap-x-5 flex flex-col items-center justify-center mb-0 l:flex-row gap-y-5 l:gap-y-0',
+                'menu_class' => 'text-lg top-menu text-white lgx:text-brand relative z-10 l:gap-x-5 flex flex-col items-center justify-center mb-0 l:flex-row gap-y-5 l:gap-y-0',
                 'container' => false,
             ]);
 		@endphp

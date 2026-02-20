@@ -1,6 +1,6 @@
 
 
-<header class="total-header total-header-js bg-brand-light h-[110px] fixed top-0 right-0 w-full z-50">
+<header class="total-header total-header-js bg-white shadow h-[110px] fixed top-0 right-0 w-full z-50">
 	<div class="container mx-auto w-full flex flex-row justify-between items-center text-white text-sm">
 			<div class="header-desktop-data flex items-center">
 				<?php echo $__env->make('global.header.logotype',['options'=>$options], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
