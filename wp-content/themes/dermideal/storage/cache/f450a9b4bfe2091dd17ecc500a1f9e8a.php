@@ -38,6 +38,10 @@
                                      class="w-full h-[360px] mdx:h-[260px] object-contain mdx:object-cover mb-4"
                                 >
                                 <h3 class="text-center text-lg font-semibold"><?php echo e($product->get_name()); ?></h3>
+                                <?php
+                                    $rating = 20 * (int)$product->get_average_rating();
+                                ?>
+                                <?php echo $__env->make('global.star-rating',['rating'=>$rating], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
                                 <p class="text-sm"><?php echo $product->get_price_html(); ?></p>
                                 <button aria-label="Visit" class="bg-brand hover:bg-brand-hover text-white p-3 rounded ">
                                     Переглянути

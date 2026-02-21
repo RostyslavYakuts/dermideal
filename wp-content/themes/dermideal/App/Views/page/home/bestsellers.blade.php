@@ -38,6 +38,10 @@
                                      class="w-full h-[360px] mdx:h-[260px] object-contain mdx:object-cover mb-4"
                                 >
                                 <h3 class="text-center text-lg font-semibold">{{$product->get_name()}}</h3>
+                                @php
+                                    $rating = 20 * (int)$product->get_average_rating();
+                                @endphp
+                                @include('global.star-rating',['rating'=>$rating])
                                 <p class="text-sm">{!! $product->get_price_html() !!}</p>
                                 <button aria-label="Visit" class="bg-brand hover:bg-brand-hover text-white p-3 rounded ">
                                     Переглянути

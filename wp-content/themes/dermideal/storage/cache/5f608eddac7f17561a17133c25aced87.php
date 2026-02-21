@@ -1,7 +1,5 @@
 
-<section class="bg-white px-5 w-full py-[100px] flex flex-col items-center justify-center gap-6 text-center text-brand ">
-    <h2 class="text-4xl"><?php echo e($data['brands_title']); ?></h2>
-    <p><?php echo e($data['brands_description']); ?></p>
+<div class="bg-white px-5 w-full py-[100px] flex flex-col items-center justify-center gap-6 text-center text-brand ">
     <?php if($data['brands']): ?>
         <div class="swiper brands-swiper w-full">
             <div class="swiper-wrapper">
@@ -20,7 +18,5 @@
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div>
         </div>
-        <div class="brands-pagination mt-5 flex justify-center items-center gap-2"></div>
-
     <?php endif; ?>
-</section><?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/home/brands.blade.php ENDPATH**/ ?>
+</div><?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/home/brands.blade.php ENDPATH**/ ?>

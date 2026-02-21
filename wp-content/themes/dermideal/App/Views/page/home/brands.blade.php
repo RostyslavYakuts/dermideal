@@ -1,7 +1,5 @@
 {{-- Home Brands --}}
-<section class="bg-white px-5 w-full py-[100px] flex flex-col items-center justify-center gap-6 text-center text-brand ">
-    <h2 class="text-4xl">{{$data['brands_title']}}</h2>
-    <p>{{$data['brands_description']}}</p>
+<div class="bg-white px-5 w-full py-[100px] flex flex-col items-center justify-center gap-6 text-center text-brand ">
     @if($data['brands'])
         <div class="swiper brands-swiper w-full">
             <div class="swiper-wrapper">
@@ -20,7 +18,5 @@
                 @endforeach
             </div>
         </div>
-        <div class="brands-pagination mt-5 flex justify-center items-center gap-2"></div>
-
     @endif
-</section>
+</div>

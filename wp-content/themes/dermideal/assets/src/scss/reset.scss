@@ -14,13 +14,13 @@ body{
 }
 
 .font-bold, b, strong{
-	font-family: $font-family-b;
+	font-weight: 700;
 }
 .font-semibold{
-	font-family: $font-family-sb;
+	font-weight: 600;
 }
 .font-medium{
-	font-family: $font-family-m;
+	font-weight: 500;
 }
 body.shadow{
 	position:relative;
@@ -42,27 +42,10 @@ body.shadow{
 		}
 	}
 }
-.wp-block-heading{
-	font-family: $font-family-b;
-}
+
 h1,h2,h3,.h1,.h2,.h3{
-	font-family: $font-family;
 	line-height: 1.2;
-}
-.bold, b, strong{
-	font-family: $font-family-sb;
-	font-weight: 500;
-}
-.font-bold{
-	font-family: $font-family-b;
 	font-weight: 700;
-}
-.font-semibold{
-	font-family: $font-family-m;
-	font-weight: 500;
-}
-span,p{
-	font-family: $font-family-l;
 }
 .total-header{
 	z-index: 1111;
@@ -146,12 +129,25 @@ span,p{
 .text-error,.label-error{
 	color:$error!important;
 }
-.banner-cta{
-	&:hover{
-		svg{
-			path{
-				fill: #fff;
-			}
+
+.custom-star-rating{
+	&:before{
+		content: "★★★★★";
+		color: #ccc;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size:22px;
+	}
+	.rating-mark{
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		&:before{
+			content: "★★★★★";
+			color: $brand;
+			font-size:22px;
 		}
 	}
 }
