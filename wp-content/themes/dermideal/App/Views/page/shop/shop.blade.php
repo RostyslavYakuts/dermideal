@@ -8,5 +8,6 @@
     @include('page.shop.tags')
     @include('page.shop.stock')
     @include('page.shop.new-products')
+    @include('page.shop.content')
 @endsection
 

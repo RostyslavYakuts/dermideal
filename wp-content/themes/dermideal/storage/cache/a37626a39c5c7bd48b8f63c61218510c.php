@@ -1,7 +1,7 @@
 
 <?php if($data['content']): ?>
-<div class="container mx-auto w-full">
-    <?php echo $data['content']; ?>
+    <div class="container mx-auto w-full pt-[50px] pb-[100px] prose-base">
+        <?php echo $data['content']; ?>
 
-</div>
+    </div>
 <?php endif; ?><?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/home/content.blade.php ENDPATH**/ ?>

@@ -156,22 +156,22 @@ h1,h2,h3,.h1,.h2,.h3{
 }
 
 .prose-base :where(p):not(:where([class~=not-prose],[class~=not-prose] *)) {
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .prose-base :where(h2):not(:where([class~=not-prose],[class~=not-prose] *)) {
-	font-size: 20px;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .prose-base :where(h3):not(:where([class~=not-prose],[class~=not-prose] *)) {
-	font-size: 18px;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .prose-base :where(ul):not(:where([class~=not-prose],[class~=not-prose] *)) {
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .prose-base{
