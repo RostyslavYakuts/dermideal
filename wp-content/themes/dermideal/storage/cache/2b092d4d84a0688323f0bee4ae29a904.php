@@ -6,9 +6,8 @@
     $stock = $data['stock'];
     if(!$stock) return;
 ?>
-<div class="w-full bg-white">
 
-    <section class="container mx-auto py-[100px] flex flex-col gap-6 justify-between items-center">
+<section class="container mx-auto py-[100px] flex flex-col gap-6 justify-between">
         <h2 class="text-4xl text-brand-gold">Наші акції</h2>
         <div class="mt-5 w-full swiper stock-swiper">
             <div class="swiper-wrapper">
@@ -23,8 +22,8 @@
                             >
                         <div class="w-full flex flex-col justify-center gap-6 text-center lgx:pr-4">
                             <h3 class="text-brand-gold text-2xl font-semibold"><?php echo e($item['title']); ?></h3>
-                            <span class="font-bold text-brand-green"><?php echo e($item['description']); ?></span>
-                            <div class="text-brand-green flex flex-col gap-2 justify-center"><?php echo $item['long_description']; ?></div>
+                            <span class="font-bold text-light-black"><?php echo e($item['description']); ?></span>
+                            <div class="text-light-black flex flex-col gap-2 justify-center"><?php echo $item['long_description']; ?></div>
                             <a class="mx-auto w-[150px] bg-brand hover:bg-brand-hover text-white p-3 rounded" target="_blank" href="<?php echo e($item['link']); ?>">
                                 Перейти
                             </a>
@@ -44,5 +43,5 @@
 
 
         </div>
-    </section>
-</div><?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/shop/stock.blade.php ENDPATH**/ ?>
+</section>
+<?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/shop/stock.blade.php ENDPATH**/ ?>

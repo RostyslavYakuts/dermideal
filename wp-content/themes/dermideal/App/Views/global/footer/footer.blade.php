@@ -4,7 +4,7 @@
      * @var array $options
      */
 @endphp
-<footer id="footer"  class="w-full bg-brand-light l:h-[390px] py-[60px]">
+<footer id="footer"  class="w-full bg-brand text-white l:h-[390px] py-[60px]">
     <div class="container mx-auto flex flex-col justify-between gap-[60px]">
         @include('global.footer.logotype')
         @include('global.footer.footer-contacts')

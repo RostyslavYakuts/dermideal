@@ -7,7 +7,7 @@
     if(!$bestsellers) return;
 @endphp
 <section class="w-full container mx-auto py-[100px]">
-    <h2 class="text-center text-brand text-4xl">{{$data['bestsellers_title']}}</h2>
+    <h2 class="text-center text-brand text-[36px] l:text-[48px]">{{$data['bestsellers_title']}}</h2>
     <div class="relative">
         <div class="mt-10 swiper bestsellers-swiper">
             <div class="swiper-wrapper">
@@ -30,19 +30,19 @@
                                  $image_id = $product->get_image_id();
                                  $image = wp_get_attachment_image_url($image_id, 'medium');
                             @endphp
-                            <a class="text-brand hover:text-brand-hover flex flex-col gap-3 justify-center items-center" target="_blank" href="{{get_permalink($product_id)}}">
+                            <a class="flex flex-col gap-3 justify-center items-center" target="_blank" href="{{get_permalink($product_id)}}">
                                 <img width="200" height="200" alt="{{$product->get_name()}}"
                                      loading="lazy"
                                      decoding="async"
                                      src="{{ $image }}"
                                      class="w-full h-[360px] mdx:h-[260px] object-contain mdx:object-cover mb-4"
                                 >
-                                <h3 class="text-center text-lg font-semibold">{{$product->get_name()}}</h3>
+                                <h3 class="lite-black hover:text-brand text-center text-lg font-semibold">{{$product->get_name()}}</h3>
                                 @php
                                     $rating = 20 * (int)$product->get_average_rating();
                                 @endphp
                                 @include('global.star-rating',['rating'=>$rating])
-                                <p class="text-sm">{!! $product->get_price_html() !!}</p>
+                                <p class="lite-black text-sm">{!! $product->get_price_html() !!}</p>
                                 <button aria-label="Visit" class="bg-brand hover:bg-brand-hover text-white p-3 rounded ">
                                     Переглянути
                                 </button>

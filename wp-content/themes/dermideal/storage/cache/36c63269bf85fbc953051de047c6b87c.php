@@ -14,7 +14,7 @@
             </h1>
 
             <div class="flex flex-col gap-6">
-                <p class="text-brand-green max-w-[480px]"><?php echo e($data['description']); ?></p>
+                <p class="max-w-[480px]"><?php echo e($data['description']); ?></p>
                 <a href="<?php echo e($data['cta_link']); ?>" class="rounded text-white bg-brand hover:bg-brand-hover w-full xs:w-[370px] h-[48px] flex justify-center items-center">
                         <?php echo e($data['cta_text']); ?>
 

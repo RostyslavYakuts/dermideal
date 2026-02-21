@@ -102,8 +102,7 @@ module.exports = {
 
 			'brown':'#74747B',
 			'black':'#040304',
-			'black-hover':'#3C3C3C',
-			'lite-black':'#252525',
+			'lite-black':'#404040',
 			'black-50':'rgba(25, 22, 29, 1)',
 			'yellow':'rgba(255, 184, 0, 1)',
 			'yellow-50':'#FFFBEB',

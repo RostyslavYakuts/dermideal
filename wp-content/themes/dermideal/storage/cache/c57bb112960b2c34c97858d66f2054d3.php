@@ -6,10 +6,9 @@
     $categories = $data['categories'];
     if(!$categories) return;
 ?>
-<section class="bg-white w-full py-[100px]">
-    <div class="container mx-auto">
-        <h2 class="text-4xl text-brand">Категорії товарів</h2>
-        <div class="categories mt-10 flex flex-col gap-10">
+
+<div class="container mx-auto bg-white w-full py-[100px]">
+    <div class="categories mt-10 flex flex-col gap-10">
             <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $group): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="flex flex-col gap-6">
 
@@ -58,5 +57,5 @@
 
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
-    </div>
-</section><?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/shop/categories.blade.php ENDPATH**/ ?>
+</div>
+<?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/page/shop/categories.blade.php ENDPATH**/ ?>

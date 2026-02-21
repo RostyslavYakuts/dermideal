@@ -10,7 +10,7 @@
     <section class="container mx-auto py-[100px] flex flex-col gap-6 lgx:flex-row justify-between items-center">
         <div class="w-full lgx:max-w-[400px] flex flex-col gap-6">
             <h2 class="text-4xl text-brand-gold">{{$data['stock_title']}}</h2>
-            <p class="text-brand-green">{{$data['stock_description']}}</p>
+            <p class="text-lite-black">{{$data['stock_description']}}</p>
         </div>
         <div class="w-full swiper stock-swiper">
             <div class="swiper-wrapper">
@@ -24,7 +24,7 @@
                         >
                         <div class="w-full flex flex-col justify-center gap-6 text-center">
                             <h3 class="text-brand-gold text-2xl font-semibold">{{$item['title']}}</h3>
-                            <p class="text-brand-green">{{$item['description']}}</p>
+                            <p class="text-lite-black">{{$item['description']}}</p>
                             <a class="mx-auto w-[150px] bg-brand hover:bg-brand-hover text-white p-3 rounded" target="_blank" href="{{$item['link']}}">
                                 Перейти
                             </a>

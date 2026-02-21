@@ -10,13 +10,13 @@
     <img class="w-full h-auto lgx:max-w-[50%] object-cover"
          width="921" height="712" loading="lazy" decoding="async"
          src="<?php echo e($data['top_product_image']['url']); ?>" alt="<?php echo e($data['top_product_image']['alt']); ?>">
-    <div class="w-full p-[25px] lgx:p-[100px] flex flex-col gap-10 text-brand-purple">
-        <h2 class="text-4xl"><?php echo e($data['top_product_title']); ?></h2>
+    <div class="w-full p-[25px] lgx:p-[100px] flex flex-col gap-10 text-light-black">
+        <h2 class="text-[36px] l:text-[48px] text-brand"><?php echo e($data['top_product_title']); ?></h2>
         <p class="font-semibold text-lg font-md"><?php echo e($data['top_product_short_description']); ?></p>
         <div class="flex lgx:flex-wrap flex-col lgx:flex-row gap-6 lgx:items-center justify-between">
             <?php if($features_arr): ?>
                 <?php $__currentLoopData = $features_arr; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $feature): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <div class="flex flex-row items-center justify-start gap-1">
+                    <div class="text-brand flex flex-row items-center justify-start gap-1">
                         <span>&check;</span>
                         <strong class="text-sm"><?php echo e($feature); ?></strong>
                     </div>
@@ -25,7 +25,7 @@
         </div>
         <p><?php echo e($data['top_product_description']); ?></p>
         <a href="<?php echo e($data['top_product_link']); ?>" target="_blank"
-           class="w-[170px] text-center bg-brand-purple hover:bg-brand-purple-hover text-white p-3 rounded">
+           class="w-[170px] text-center bg-brand hover:bg-brand-hover text-white p-3 rounded">
             Перейти до товару
         </a>
     </div>

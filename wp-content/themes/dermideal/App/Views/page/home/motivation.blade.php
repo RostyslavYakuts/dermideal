@@ -1,8 +1,8 @@
 {{-- Home Motivation Section --}}
 
 <section id="motivation" class="w-full bg-white flex flex-col lgx:flex-row lgx:items-center">
-    <div class="px-[25px] py-[50px] lgx:px-[100px] lgx:py-0 flex flex-col gap-6 text-brand-yellow-green">
-        <h2 class="w-full text-[36px] l:text-[48px]">
+    <div class="px-[25px] py-[50px] lgx:px-[100px] lgx:py-0 flex flex-col gap-6 text-lite-black">
+        <h2 class="w-full text-[36px] l:text-[48px] text-brand">
             {!! $data['motivation_section_title'] !!}
         </h2>
         <p class="font-semibold w-full text-sm l:text-base text-brand-text">
@@ -15,7 +15,7 @@
         @if($data['arguments_list'])
             @foreach($data['arguments_list'] as $argument)
                  <div class="flex flex-row gap-2 items-center">
-                     <figure class="flex justify-center items-center bg-brand-yellow-green-dark rounded-full min-w-[70px] w-[70px] h-[70px] p-2">
+                     <figure class="flex justify-center items-center bg-white border border-brand rounded-full min-w-[70px] w-[70px] h-[70px] p-2">
                          <img
                               class="w-[40px] h-[40px] object-cover"
                               width="40" height="40" loading="lazy"

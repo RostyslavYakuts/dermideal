@@ -2,12 +2,12 @@
 <div class="w-full bg-brand">
     <section id="advantages" class="container mx-auto pt-[100px] pb-[30px]">
         <div class="flex flex-col md:flex-row justify-between items-start">
-            <h2 class="text-[38px] l:text-[48px] mt-3 l:max-w-[50%] text-brand-light">
+            <h2 class="text-[38px] l:text-[48px] mt-3 l:max-w-[50%] text-white">
                 <?php echo $data['advantages_section_title']; ?>
 
             </h2>
             <div class="mt-3 w-full flex gap-2  justify-end">
-                <p class="text-brand-light l:max-w-[500px]"><?php echo e($data['advantages_section_description']); ?></p>
+                <p class="text-white l:max-w-[500px]"><?php echo e($data['advantages_section_description']); ?></p>
             </div>
         </div>
 
@@ -17,7 +17,7 @@
             <?php if($data['advantages_section_features']): ?>
                 <?php $__currentLoopData = $data['advantages_section_features']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="flex flex-row gap-3 mdx:justify-center md:items-center">
-                        <figure class="bg-brand-light rounded-full p-3 min-w-[70px] w-[70px] h-[70px] flex justify-center items-center">
+                        <figure class="bg-white rounded-full p-3 min-w-[70px] w-[70px] h-[70px] flex justify-center items-center">
                             <img class="w-[40px] h-[40px]"
                                  width="40"
                                  height="40"
@@ -29,7 +29,7 @@
                             >
                         </figure>
 
-                        <div class="flex flex-col gap-2 text-brand-light">
+                        <div class="flex flex-col gap-2 text-white">
                           <span class="font-semibold uppercase flex items-center gap-2 leading-none">
                             <?php echo e($item['title']); ?>
 

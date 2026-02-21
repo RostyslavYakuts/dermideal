@@ -6,10 +6,9 @@
     $categories = $data['categories'];
     if(!$categories) return;
 @endphp
-<section class="bg-white w-full py-[100px]">
-    <div class="container mx-auto">
-        <h2 class="text-4xl text-brand">Категорії товарів</h2>
-        <div class="categories mt-10 flex flex-col gap-10">
+
+<div class="container mx-auto bg-white w-full py-[100px]">
+    <div class="categories mt-10 flex flex-col gap-10">
             @foreach($categories as $group)
                 <div class="flex flex-col gap-6">
 
@@ -56,5 +55,4 @@
 
             @endforeach
         </div>
-    </div>
-</section>
+</div>
