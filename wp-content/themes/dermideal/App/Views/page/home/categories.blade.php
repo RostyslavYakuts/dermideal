@@ -8,7 +8,7 @@
 @endphp
 <section class="bg-brand-light-orange w-full py-[100px]">
     <div class="container mx-auto">
-        <h2 class="text-[36px] l:text-[48px] text-brand text-center uppercase">Наша продукція</h2>
+        <h2 class="text-[36px] l:text-[48px] text-lite-black font-light">Наша продукція</h2>
         <div class="categories mt-10 flex flex-col gap-10">
             @foreach($categories as $group)
                 <div class="flex flex-col gap-6">

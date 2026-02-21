@@ -70,7 +70,7 @@ module.exports = {
 				'light':'#bdc7a2',
 				'beige':'#f6f2d3',
 				'gold':'#db9b3c',
-				'light-orange':'#f1ded1',
+				'light-orange':'#fff2f1',
 				'light-purple':'#edc8e5',
 				'purple':'#7d318a',
 				'purple-hover':'#4c1b62',

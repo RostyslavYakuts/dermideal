@@ -2,3 +2,10 @@
 * Footer
  */
 
+.footer-menu{
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

@@ -7,7 +7,7 @@
     if(!$bestsellers) return;
 ?>
 <section class="w-full container mx-auto py-[100px]">
-    <h2 class="text-center text-brand text-[36px] l:text-[48px]"><?php echo e($data['bestsellers_title']); ?></h2>
+    <h2 class="text-brand text-[36px] l:text-[48px] font-light"><?php echo e($data['bestsellers_title']); ?></h2>
     <div class="relative">
         <div class="mt-10 swiper bestsellers-swiper">
             <div class="swiper-wrapper">
@@ -54,12 +54,12 @@
             </div>
         </div>
         <button aria-label="Prev" class="bestsellers-button-prev absolute left-0 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
-                text-brand text-4xl cursor-pointer select-none px-3">
-            &#10094;
+                text-brand text-4xl cursor-pointer select-none px-3 hover:text-white hover:bg-brand-hover">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
         </button>
         <button aria-label="Next" class="bestsellers-button-next absolute right-0 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
-                text-brand text-4xl cursor-pointer select-none px-3">
-            &#10095;
+                text-brand text-4xl cursor-pointer select-none px-3 hover:text-white hover:bg-brand-hover">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
         </button>
         <div class="bestsellers-pagination  mt-4 flex justify-center gap-1 items-center mx-auto"></div>
     </div>

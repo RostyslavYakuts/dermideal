@@ -13,15 +13,6 @@ body{
 	overflow-x: hidden;
 }
 
-.font-bold, b, strong{
-	font-weight: 700;
-}
-.font-semibold{
-	font-weight: 600;
-}
-.font-medium{
-	font-weight: 500;
-}
 body.shadow{
 	position:relative;
 	overflow:hidden;
@@ -47,7 +38,18 @@ h1,h2,h3,.h1,.h2,.h3{
 	line-height: 1.2;
 	font-weight: 700;
 }
-
+.font-bold, b, strong{
+	font-weight: 700;
+}
+.font-semibold{
+	font-weight: 600;
+}
+.font-medium{
+	font-weight: 500;
+}
+.font-light{
+	font-weight: 200;
+}
 .total-header{
 	z-index: 1111;
 }
@@ -174,4 +176,7 @@ h1,h2,h3,.h1,.h2,.h3{
 
 .prose-base{
 	color:#040304;
+}
+.empty-link{
+	text-decoration: underline;
 }

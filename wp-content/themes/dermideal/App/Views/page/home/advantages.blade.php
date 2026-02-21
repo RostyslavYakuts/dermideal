@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        <hr class="w-full bg-brand-light my-[50px] h-[2px]">
+        <hr class="w-full bg-brand-gold my-[50px] h-[2px]">
 
         <div class="mt-[20px] l:mt-[67px] gap-6 grid grid-cols-1 mdx:flex mdx:flex-row mdx:justify-between mdx:items-center">
             @if($data['advantages_section_features'])
@@ -60,12 +60,12 @@
                 </div>
             </div>
             <button aria-label="Prev" class="adv-prev absolute left-0 xl:-left-[50px] top-1/2 -translate-y-1/2 z-20
-                text-brand-light text-4xl cursor-pointer select-none px-3">
-                &#10094;
+                text-brand-gold hover:text-white hover:bg-brand-gold text-4xl cursor-pointer select-none px-3">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
             </button>
             <button aria-label="Next" class="adv-next absolute right-0 xl:-right-[50px] top-1/2 -translate-y-1/2 z-20
-                text-brand-light text-4xl cursor-pointer select-none px-3">
-                &#10095;
+                text-brand-gold hover:text-white hover:bg-brand-gold text-4xl cursor-pointer select-none px-3">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </button>
         </div>
 

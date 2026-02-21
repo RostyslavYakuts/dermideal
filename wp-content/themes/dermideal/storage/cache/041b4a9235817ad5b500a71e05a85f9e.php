@@ -38,12 +38,12 @@
 
             </div>
             <div class="mt-4 w-full flex justify-between items-center shadow p-4">
-                <button aria-label="Prev" class="new-products-prev text-brand text-3xl cursor-pointer select-none px-3">
-                    &#10094;
+                <button aria-label="Prev" class="new-products-prev text-brand text-3xl cursor-pointer select-none px-3 hover:text-white hover:bg-brand-hover">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </button>
                 <div class="new-products-pagination flex justify-center gap-1 items-center mx-auto"></div>
-                <button aria-label="Next" class="new-products-next text-brand text-3xl cursor-pointer select-none px-3">
-                    &#10095;
+                <button aria-label="Next" class="new-products-next text-brand text-3xl cursor-pointer select-none px-3 hover:text-white hover:bg-brand-hover">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </button>
             </div>
 

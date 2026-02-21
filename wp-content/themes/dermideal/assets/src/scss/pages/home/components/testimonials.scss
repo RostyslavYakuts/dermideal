@@ -1,9 +1,9 @@
 .testimonials-swiper-pagination{
   .swiper-pagination-bullet{
-    background: #fff;
+    background: $text;
     opacity:1;
   }
   .swiper-pagination-bullet-active{
-    background: #db9b3c;
+    background: $gold;
   }
 }

@@ -32,12 +32,12 @@
                 @endforeach
             </div>
             <div class="mt-4 w-full flex justify-between items-center">
-                    <button aria-label="Prev" class="stock-prev text-brand text-xl cursor-pointer select-none px-3">
-                        &#10094;
+                    <button aria-label="Prev" class="stock-prev text-brand hover:text-white hover:bg-brand-hover text-xl cursor-pointer select-none px-3">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
                     </button>
                     <div class="stock-pagination flex justify-center gap-1 items-center mx-auto"></div>
-                    <button aria-label="Next" class="stock-next text-brand text-xl cursor-pointer select-none px-3">
-                        &#10095;
+                    <button aria-label="Next" class="stock-next text-brand hover:text-white hover:bg-brand-hover text-xl cursor-pointer select-none px-3">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </button>
             </div>
 

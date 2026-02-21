@@ -7,7 +7,7 @@
 	@php
             wp_nav_menu([
                 'theme_location' => 'footer_menu',
-                'menu_class' => 'flex items-center gap-2 text-sm text-white',
+                'menu_class' => 'footer-menu flex items-center gap-2 text-sm text-white',
                 'container' => false,
             ]);
 	@endphp
