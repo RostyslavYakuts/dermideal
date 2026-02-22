@@ -1,0 +1,1 @@
+<?php /**PATH /var/www/html/wp-content/themes/dermideal/App/Views/taxonomy/category/category.blade.php ENDPATH**/ ?>

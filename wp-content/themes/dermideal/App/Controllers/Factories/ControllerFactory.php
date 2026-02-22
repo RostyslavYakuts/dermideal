@@ -3,6 +3,7 @@
 namespace di\App\Controllers\Factories;
 
 use di\App\Controllers\CategoryController;
+use di\App\Controllers\ProductCategoryController;
 use di\App\Controllers\ShopController;
 use di\App\Controllers\ControllerInterface;
 use di\App\Controllers\Error404Controller;
@@ -12,6 +13,7 @@ use di\App\Controllers\SingleController;
 use di\App\Controllers\TagController;
 use di\App\Models\HomeModel;
 use di\App\Models\ShopModel;
+use di\App\Models\ProductCategoryModel;
 
 
 class ControllerFactory
@@ -46,6 +48,11 @@ class ControllerFactory
 
         if (is_tag()) {
             return new TagController();
+        }
+
+        if(is_tax('product_cat')){
+            $productCategoryModel = new ProductCategoryModel($current_obj);
+            return new ProductCategoryController($productCategoryModel);
         }
 
         return new Error404Controller();

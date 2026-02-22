@@ -1,7 +1,7 @@
 <?php
 // 404 Template
 
-use ids\App\Controllers\Error404Controller;
+use di\App\Controllers\Error404Controller;
 
 if (!defined('ABSPATH')) {
     exit;

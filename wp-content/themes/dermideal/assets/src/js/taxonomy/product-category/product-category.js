@@ -1,0 +1,1 @@
+import '@/scss/taxonomy/product-category/product-category.scss';

@@ -80,6 +80,12 @@ class Enqueuer
                     }
                     continue;
                 }
+                if (str_contains($fullName, 'product_category')) {
+                    if (is_tax('product_cat')) {
+                        wp_enqueue_script($name, get_template_directory_uri() . '/assets/dist/' . $fullName, [], $js_version, true);
+                    }
+                    continue;
+                }
 				wp_enqueue_script($name, get_template_directory_uri() . '/assets/dist/' . $fullName, [], $js_version, array(
 					'in_footer' => true,
 					'strategy'  => 'defer',
@@ -103,6 +109,17 @@ class Enqueuer
                 }
                 if (str_contains($fullName, 'shop')) {
                     if(is_shop()){
+                        wp_enqueue_style(
+                            $handle,
+                            get_template_directory_uri() . '/assets/dist/' . $fullName,
+                            [],
+                            filemtime(get_template_directory() . '/assets/dist/' . $fullName)
+                        );
+                    }
+                    continue;
+                }
+                if (str_contains($fullName, 'product_category')) {
+                    if (is_tax('product_cat')) {
                         wp_enqueue_style(
                             $handle,
                             get_template_directory_uri() . '/assets/dist/' . $fullName,

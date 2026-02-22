@@ -12,6 +12,7 @@ module.exports = {
 		main:'./assets/src/js/main.js',
 		home:'./assets/src/js/pages/home/home.js',
 		shop:'./assets/src/js/pages/shop/shop.js',
+		product_category:'./assets/src/js/taxonomy/product-category/product-category.js',
 	},
 	output: {
 		filename: '[name].[contenthash].js',
