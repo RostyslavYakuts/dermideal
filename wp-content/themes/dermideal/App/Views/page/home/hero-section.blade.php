@@ -7,8 +7,8 @@
 @endphp
 <section id="hero_section"  class="h-calc-100-110 relative mt-[110px] w-full hero-section home-hero-section flex flex-col-reverse mdx:flex-col ">
     <div class="container mx-auto flex flex-col relative z-10">
-        <div class="mdx:max-w-[550px] p-4 bg-[#ffffff99] mt-0 mdx:mt-[168px] flex flex-col justify-center gap-12">
-            <h1 class="text-brand text-[40px] l:text-[64px] leading-none">
+        <div class="mdx:max-w-[550px] p-4 bg-[#ffffff99] mb-12 mdx:mb-0 mdx:mt-[168px] flex flex-col justify-center gap-12">
+            <h1 class="text-brand text-[40px] font-lite l:text-[64px] leading-none">
                 {{$data['h1']}}
             </h1>
 
